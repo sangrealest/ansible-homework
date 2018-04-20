@@ -6,9 +6,7 @@
       url: http://ctrl-79d3.rhpds.opentlc.com:/etc/yum.repos.d/open.repo
       dest: /etc/yum.repos.d/open.repo
   - name: Get openstack env 
-    get_url:
-      url: http://ctrl.example.com:/root/keystonerc_admin
-      dest: /root/keystonerc_admin
+    command: scp ctrl.example.com:/root/keystonerc_admin /root/keystonerc_admin
   - name: Source keystone
     command: source /root/keystonerc_admin
   - name: Get openstack.pub
