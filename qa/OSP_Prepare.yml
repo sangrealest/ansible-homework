@@ -1,6 +1,6 @@
 ---
 - hosts: jumpbox
- _tasks:
+  tasks:
   - name: Get openstack repo
     get_url:
       url: http://ctrl-79d3.rhpds.opentlc.com:/etc/yum.repos.d/open.repo
