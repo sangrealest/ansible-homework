@@ -40,5 +40,5 @@
   - name: Get clouds.yaml
     copy:
       name: clouds.yaml
-      dest:/ etc/openstack/
+      dest: / etc/openstack/
 
