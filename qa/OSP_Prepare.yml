@@ -7,8 +7,8 @@
       dest: /etc/yum.repos.d/open.repo
   - name: Get openstack env 
     command: scp ctrl.example.com:/root/keystonerc_admin /root/keystonerc_admin
-  - name: Source keystone
-    command: source /root/keystonerc_admin
+#  - name: Source keystone
+#    command: source /root/keystonerc_admin
   - name: Get openstack.pub
     get_url:
       url: http://www.opentlc.com/download/ansible_bootcamp/openstack_keys/openstack.pub
