@@ -37,6 +37,6 @@
       state: directory
   - name: Get clouds.yaml
     copy:
-      name: clouds.yaml
+      src: clouds.yaml
       dest: / etc/openstack/
 
