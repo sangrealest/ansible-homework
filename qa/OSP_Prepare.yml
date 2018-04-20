@@ -14,7 +14,7 @@
       url: http://www.opentlc.com/download/ansible_bootcamp/openstack_keys/openstack.pub
       dest: /tmp/openstack.pub
   - name: Get openstack to cloud-user
-    command: cat /tmp/openstack.pub >> /home/cloud-user/.ssh/authorized_keys
+    shell: cat /tmp/openstack.pub >> /home/cloud-user/.ssh/authorized_keys
   - name: Install epel
     yum:
       name: https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
