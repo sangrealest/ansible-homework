@@ -1,0 +1,10 @@
+---
+- hosts: all
+  roles:
+    - role: osp-facts
+      register: fact
+  
+- hosts: all
+  tasks:
+  - debug: 
+      msg: "{{fact}}"
